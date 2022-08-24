@@ -9,23 +9,55 @@
 </head>
 <body>
     <form>
-        <label for="text1">First name</label>
+        <fieldset>
+            <legend>Your Name</legend>
+            <label for="text1">First name</label>
+            <input type="text" value="abc" name="text1" id="text1">
+            <label for="text1">mid name</label>
         <input type="text" value="abc" name="text1" id="text1">
+        <label for="text1">last name</label>
+        <input type="text" value="abc" name="text1" id="text1">
+        </fieldset>
         
-        <input type="button" value="Submit" onclick=""><br>
+        <br>
+        <fieldset>
+            <legend>FOOD</legend>
         <label for="pizza">pizza</label>
         <input type="radio" name="pizza1" id="pizza"><br>
         <label for="pizza">burger</label>
         <input type="radio" name="pizza1" id="burger"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Place want to visit</legend>
         <input type="checkbox" name="check1" id="goa">
         <label for="goa">goa</label><br>
         <input type="checkbox" name="check1" id="banaras">
         <label for="banaras">banaras</label><br>
+        </fieldset>
         <select>
             <option value="gao">goa</option>
             <option value="banaras" selected>Banaras</option>
             <option value="paris">paris</option>
-        </select>
+        </select><br>
+        <label for="textarea">more</label><br>
+        <textarea name="textarea" id="textarea" cols="10" rows="10" placeholder="TMC"></textarea>
+        <br>
+        <fieldset><legend>datalist</legend><input list="sas" placeholder="Choose kro"></fieldset>
+        <datalist id="sas">
+            <option value="India">India</option>
+            <option value="America">America</option>
+            <option value="Indonesia"> Indonesia</option>
+            <option value="amazon">amazon</option>
+        </datalist>
+        <br>
+        <form oninput="c.value= parseInt(a.value)+ parseInt(b.value)">
+        a <input type="number" name="a" id="a" step="0.5">+b <input type="number" name="b" id="b" step="0.5"> = 
+    </form>
 
+
+
+
+        <br><br><input type="button" value="Submit" onclick="">
     </form>
 </body>
+</html>
